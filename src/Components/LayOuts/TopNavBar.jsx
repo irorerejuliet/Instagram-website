@@ -4,8 +4,8 @@ import { BsMessenger } from "react-icons/bs";
 
 const TopNavBar = () => {
   return (
-    <div className="w-full h-auto mb-5 lg:hidden md:hidden sm:block block">
-      <div className="w-full h-auto flex items-center justify-between  ">
+    <div className="w-full h-auto mb-5 text-white md:hidden block">
+      <div className="w-full h-auto flex items-center justify-between">
         <Link to="/">
           <img
             src="/images/Logo.png"
@@ -19,7 +19,7 @@ const TopNavBar = () => {
           </Link>
           <Link to="/" className="relative">
             <BsMessenger size={20} />
-            <div className="absolute -right-2 -top-2 bg-red-600 sm:text-white rounded-full w-5 h-5 flex items-center justify-center ">
+            <div className="absolute -right-2 -top-2 bg-red-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
               9
             </div>
           </Link>

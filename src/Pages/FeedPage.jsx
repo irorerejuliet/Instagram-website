@@ -1,5 +1,7 @@
-import React from 'react'
+
 import TopNavBar from '../Components/LayOuts/TopNavBar'
+import Stories from '../Components/Stories';
+
 
 const FeedPage = () => {
   return (
@@ -8,9 +10,9 @@ const FeedPage = () => {
         {/* Feed + story section*/}
         <div className="lg:w-[55%] md:w-full sm:w-full w-full h-auto relative">
           {/* Top Navbar (only visible on small screen) */}
-          <TopNav />
+         <TopNavBar/>
           {/* Stories section */}
-          {/* <Stories /> */}
+          <Stories/>
           {/* Feed section */}
           <div className="w-full h-auto flex items-center justify-center mt-6">
             <div className="lg:w-[73%] md:[73%] sm:w-[80%] w-[80%] h-auto">
