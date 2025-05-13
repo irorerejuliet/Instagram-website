@@ -1,42 +1,42 @@
 export const StoriesData = [
   {
     id: 1,
-    username: "adventure",
+    username: "Adventure",
     image: "/images/adventure.jpeg",
   },
   {
     id: 2,
-    username: "car",
+    username: "Car",
     image: "/images/car.jpeg",
   },
   {
     id: 3,
-    username: "frank",
+    username: "Frank",
     image: "/images/Frank2.jpg",
   },
   {
     id: 4,
-    username: "frendishipquote",
+    username: "Friendshipquote",
     image: "/images/frienshipQuote.jpeg",
   },
   {
     id: 5,
-    username: "gold",
+    username: "Gold",
     image: "/images/gold.jpg",
   },
   {
     id: 6,
-    username: "mountain",
+    username: "Mountain",
     image: "/images/mountain.jpeg",
   },
   {
     id: 7,
-    username: "party",
+    username: "Party",
     image: "/images/party.jpeg",
   },
   {
     id: 8,
-    username: "photographer",
+    username: "Photographer",
     image: "/images/photographer.jpeg",
   },
   {
@@ -46,13 +46,13 @@ export const StoriesData = [
   },
   {
     id: 10,
-    username: "tolu",
+    username: "Tolu",
     image: "/images/tolu.jpg",
   },
   {
     id: 11,
-    username: "vacation",
-    image: "/images/vacation.jpegg",
+    username: "Signout",
+    image: "/images/signout picture.jpg",
   },
   {
     id: 12,
