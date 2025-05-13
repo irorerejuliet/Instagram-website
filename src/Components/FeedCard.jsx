@@ -59,12 +59,31 @@ const FeedCard = () => {
             {/* user action (like, comment, share and save) */}
             <div className="w-full h-auto flex items-center justify-between text-white">
               <div className="flex items-center gap-x-3 ">
-                <CiHeart size={25}/> {/*likes */}
+                <CiHeart size={25} /> {/*likes */}
                 <FaRegComment /> {/*comment*/}
                 <TbLocationShare />
               </div>
               <BiSolidConversation />
             </div>
+            {/* like count */}
+            <Link
+              to="/"
+              className="w-full h-auto flex items-center gap-x-2 text-base text-gray-200 font-medium my-2"
+            >
+              <div className="flex items-center">
+                <img
+                  src={mutualFrndimg}
+                  alt={likeCount}
+                  className="w-5 h-5 rounded-full object-fill p-[1.5px] bg-black"
+                />
+                <img
+                  src={mutualFrndimg2}
+                  alt={likeCount}
+                  className="w-5 h-5 rounded-full object-fill p-[1.5px] bg-black -ml-3"
+                />
+              </div>
+              {likeCount} {/* likes */}
+            </Link>
             {/* caption with surname */}
             {/* Comment */}
           </div>
