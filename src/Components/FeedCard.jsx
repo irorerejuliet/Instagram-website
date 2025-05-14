@@ -6,6 +6,7 @@ import { CiHeart } from 'react-icons/ci';
 import { FaRegComment } from 'react-icons/fa6';
 import { TbLocationShare } from 'react-icons/tb';
 import { BiSolidConversation } from 'react-icons/bi';
+import { MdOutlineEmojiEmotions } from 'react-icons/md';
 
 const FeedCard = () => {
   return (
@@ -84,8 +85,31 @@ const FeedCard = () => {
               </div>
               {likeCount} {/* likes */}
             </Link>
-            {/* caption with surname */}
+            {/* Caption section */}
+            <div className="w-full h-auto flex items-center gap-x-1">
+              <div className="w-full h-auto text-sm text-gray-200 font-thin">
+                <Link to="/" className="text-white font-medium text-sm me-1">
+                  {username}
+                </Link>
+                {caption}
+                <Link to="/" className="text-gray-400  text-sm ms-1">
+                  More
+                </Link>
+              </div>
+            </div>
+            {/* comment count */}
+            <Link to="/" className="text-gray-400 font-normal my-2">
+              View all {commentCount} Comment
+            </Link>
             {/* Comment */}
+            <div className="w-full h-auto flex items-center justify-between border-b border-b-gray-500">
+              <input
+                type="text"
+                className="w-[90%] h-auto bg-transparent border-none outline-none text-sm text-gray-400 py-3"
+                placeholder="Add a Comment...."
+              />
+              <MdOutlineEmojiEmotions className="text-white" />
+            </div>
           </div>
         )
       )}

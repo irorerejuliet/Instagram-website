@@ -1,6 +1,7 @@
 
 import FeedCard from '../Components/FeedCard';
 import TopNavBar from '../Components/LayOuts/TopNavBar'
+import RecommendationUser from '../Components/RecommendationUser';
 import Stories from '../Components/Stories';
 
 
@@ -11,21 +12,24 @@ const FeedPage = () => {
         {/* Feed + story section*/}
         <div className="lg:w-[55%] md:w-full sm:w-full w-full h-auto relative">
           {/* Top Navbar (only visible on small screen) */}
-         <TopNavBar/>
+          <TopNavBar />
           {/* Stories section */}
-          <Stories/>
+          <Stories />
           {/* Feed section */}
           <div className="w-full h-auto flex items-center justify-center mt-6">
             <div className="lg:w-[73%] md:[73%] sm:w-[80%] w-[80%] h-auto">
               {/*  */}
-              <FeedCard /> 
+              <FeedCard />
+              <FeedCard />
+              <FeedCard />
+              <FeedCard />
             </div>
           </div>
         </div>
         {/* Recommended user section */}
         <div className="w-[25%] h-auto lg:block md:hidden sm:hidden hidden">
           {/*  */}
-          {/* <RecommendedUser /> */}
+          <RecommendationUser />
         </div>
       </div>
     </>
