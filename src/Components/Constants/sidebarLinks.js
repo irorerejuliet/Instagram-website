@@ -9,7 +9,7 @@ import { TiHome } from "react-icons/ti";
  export const sidebarLinks =[
  {
         name: "Home",
-        link: "/Home",
+        link: "/",
         icon: TiHome ,
         id: 1,
       },

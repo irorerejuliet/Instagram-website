@@ -1,9 +1,9 @@
-import React from "react";
+
 import LargeNavBar from "../Components/LayOuts/LargeNavBar";
 import MobileNav from "../Components/LayOuts/MobileNav";
 import { Outlet } from "react-router-dom";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <div className="w-full h-auto flex items-start justify-between lg:gap-x-32 md:gap-x-16 sm:gap-x-8 gap-x-4 relative">
       {/* Sidebar */}
@@ -24,4 +24,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;
