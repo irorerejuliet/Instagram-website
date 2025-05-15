@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CiLink } from 'react-icons/ci';
 import { FaLink } from 'react-icons/fa';
 import { IoIosLink, IoIosSettings, } from 'react-icons/io';
 import { Link } from 'react-router-dom'
 import { highlightData } from './Constants/HighlightData';
+import Tab from './Tab';
+import { MdLocalPostOffice } from 'react-icons/md';
 
 const Main= () => {
+  const [activeTab, setActiveTab] = useState("posts");
+  const [isContentVisible, setContentVisible] = useState(true)
+
+  
+  const handleTabClick = (tab) => {
+    setContentVisible(false);
+
+    // delay animation
+    setTimeout(() => {
+      setActiveTab(tab);
+      setContentVisible(true);
+    }, 300);
+  };
+  
+   
   return (
     <>
       <div className="lg:w-[88%]  md:w-[88%] sm:w-full w-full  h-auto lg:block md:block sm:hidden hidden">
@@ -79,15 +96,42 @@ const Main= () => {
                     alt={username}
                     className="rounded-full h-full w-full object-cover p-[2.5px] bg-black"
                   />
-                  <p className="text-white text-sm mt-1">
-                    {username}
-                  </p>
+                  <p className="text-white text-sm mt-1">{username}</p>
                 </div>
               </Link>
             ))}
           </div>
         </div>
         {/* Post, Reels, Tagged section */}
+        <div className="w-full h-auto">
+          <div className="w-full h-auto flex items-center justify-center gap-x-6 mb-4 border-t border-[#313131]">
+            <Tab
+              label="POSTS"
+              icon={<MdLocalPostOffice />}
+              isActive={activeTab === "posts"}
+              onclick={() => handleTabClick("posts")}
+            />
+            <Tab
+              label="REELS"
+              icon={<MdLocalPostOffice />}
+              isActive={activeTab === "reels"}
+              onclick={() => handleTabClick("reels")}
+            />
+            <Tab
+              label="TAGGED"
+              icon={<MdLocalPostOffice />}
+              isActive={activeTab === "tag"}
+              onclick={() => handleTabClick("tag")}
+            />
+          </div>
+          <div
+            className={`mt-4 transition-opacity duration-300 ease-out ${
+              isContentVisible ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {activeTab === "POST" }
+          </div>
+        </div>
       </div>
     </>
   );
