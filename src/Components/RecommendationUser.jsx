@@ -25,9 +25,11 @@ const RecommendationUser = () => {
           </div>
           {/* All users */}
           {recommendationUserData.map(({ id, username, image, follow }) => (
-            <div className="w-full h-auto flex items-center justify-between my-4">
+            <div
+              className="w-full h-auto flex items-center justify-between my-4"
+              key={id}
+            >
               <Link
-                key={id}
                 to="/profile"
                 className="w-full h-auto flex items-center gap-x-2"
               >

@@ -6,6 +6,12 @@ import { Link } from 'react-router-dom'
 import { highlightData } from './Constants/HighlightData';
 import Tab from './Tab';
 import { MdLocalPostOffice } from 'react-icons/md';
+import Posts from './Posts';
+import Reels from './Reels';
+import Tags from './Tags';
+import { RxComponent2 } from 'react-icons/rx';
+import { RiCalendarEventFill, RiPriceTag2Fill } from 'react-icons/ri';
+import { LiaTableSolid } from 'react-icons/lia';
 
 const Main= () => {
   const [activeTab, setActiveTab] = useState("posts");
@@ -64,10 +70,10 @@ const Main= () => {
             </p>
             {/* Bio */}
             <p className="text-base text-gray-100 font-normal">
+ <br />
               IRORERE JULIET <br />
-              Professional Account <br />
-              Professional Account <br />
-              Professional Account <br />
+              Business Strategist <br />
+              Chief Buider <br />
             </p>
             {/* Links */}
             <p className="text-base text-gray-100 font-normal flex items-center gap-x-2">
@@ -104,32 +110,36 @@ const Main= () => {
         </div>
         {/* Post, Reels, Tagged section */}
         <div className="w-full h-auto">
+          {/* tag section */}
           <div className="w-full h-auto flex items-center justify-center gap-x-6 mb-4 border-t border-[#313131]">
             <Tab
               label="POSTS"
-              icon={<MdLocalPostOffice />}
+              icon={<LiaTableSolid />}
               isActive={activeTab === "posts"}
               onclick={() => handleTabClick("posts")}
             />
             <Tab
               label="REELS"
-              icon={<MdLocalPostOffice />}
+              icon={<RiCalendarEventFill />}
               isActive={activeTab === "reels"}
               onclick={() => handleTabClick("reels")}
             />
             <Tab
               label="TAGGED"
-              icon={<MdLocalPostOffice />}
+              icon={<RiPriceTag2Fill />}
               isActive={activeTab === "tag"}
-              onclick={() => handleTabClick("tag")}
+              onclick={() => handleTabClick("tagged")}
             />
           </div>
+          {/* Tab content section */}
           <div
             className={`mt-4 transition-opacity duration-300 ease-out ${
               isContentVisible ? "opacity-100" : "opacity-0"
             }`}
           >
-            {activeTab === "POST" }
+            {activeTab === "posts" && <Posts />}
+            {activeTab === "reels" && <Reels />}
+            {activeTab === "tagged" && <Tags />}
           </div>
         </div>
       </div>

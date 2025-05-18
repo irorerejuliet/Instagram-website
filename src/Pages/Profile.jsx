@@ -1,4 +1,5 @@
 import Main from "../Components/main"
+import MobileProfile from "./MobileProfile"
 
 
 
@@ -9,6 +10,7 @@ const Profile = () => {
           {/* profile for big screem */}
           <Main/>
           {/* profile for larfe screen */}
+          <MobileProfile/>
         </div>
   )
 }
