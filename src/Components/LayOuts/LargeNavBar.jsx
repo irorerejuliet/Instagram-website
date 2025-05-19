@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaThreads } from "react-icons/fa6";
 import { IoMdMenu } from "react-icons/io";
 import { sidebarLinks } from "../Constants/sidebarLinks";
@@ -20,8 +20,8 @@ const LargeNavbar = () => {
       </Link>
       <div className="w-full h-auto flex items-start flex-col gap-y-2 text-white">
         {/* Loop other navlinks */}
-        {sidebarLinks.map((item) => (
-          <Link
+        {/* {sidebarLinks.map((item) => (
+          <NavLink
             to={item.link}
             key={item.id}
             className="w-full h-auto flex items-center gap-x-4 p-3 bg-transparent hover:bg-gray-800/60 rounded-md ease-out duration-500 group"
@@ -30,8 +30,25 @@ const LargeNavbar = () => {
             <p className="text-medium font-bold lg:block md:hidden sm:hidden hidden">
               {item.name}
             </p>
-          </Link>
+          </NavLink>
+        ))} */}
+        {sidebarLinks.map((item) => (
+          <NavLink
+            to={item.link}
+            key={item.id}
+            className={({ isActive }) =>
+              `w-full h-auto flex items-center gap-x-4 p-3 rounded-md ease-out duration-500 group ${
+                isActive ? "bg-gray-800/80 font-bold" : "hover:bg-gray-800/60"
+              }`
+            }
+          >
+            <item.icon />
+            <p className="text-medium font-bold lg:block md:hidden sm:hidden hidden">
+              {item.name}
+            </p>
+          </NavLink>
         ))}
+
         {/* profile section */}
         <Link
           to="/profile"
@@ -71,3 +88,7 @@ const LargeNavbar = () => {
 };
 
 export default LargeNavbar;
+
+
+
+      
