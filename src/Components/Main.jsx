@@ -42,7 +42,7 @@ const Main= () => {
           <div className="flex items-start flex-col">
             <div className="flex items-center gap-x-5 mb-4">
               <Link to="/profile" className="text-lg text-gray-200 font-normal">
-                mountain.men
+              Code-With
               </Link>
               <div className="flex items-center gap-x-2">
                 <button className="bg-[#1d1d1d] rounded-lg px-4 py-1.5 text-base text-white font-normal hover:bg-[#2f2f2f] ease-out duration-150">
@@ -70,10 +70,10 @@ const Main= () => {
             </p>
             {/* Bio */}
             <p className="text-base text-gray-100 font-normal">
- <br />
-              IRORERE JULIET <br />
-              Business Strategist <br />
-              Chief Buider <br />
+               IRORERE JULIET <br />
+              Web Enthusiast <br />
+              LifeLong Learner <br />
+              web/App Developer <br />
             </p>
             {/* Links */}
             <p className="text-base text-gray-100 font-normal flex items-center gap-x-2">
