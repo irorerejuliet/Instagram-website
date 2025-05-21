@@ -1,4 +1,4 @@
-export const storiesData = [
+export const StoriesData = [
   {
     id: 1,
     username: "Adventure",
