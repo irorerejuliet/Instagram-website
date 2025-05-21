@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { IoIosLink, IoIosSettings } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import { highlightData } from '../Components/Constants/HighlightData';
 import { LiaTableSolid } from 'react-icons/lia';
 import { RiCalendarEventFill, RiPriceTag2Fill } from 'react-icons/ri';
 import Posts from '../Components/Posts';
 import Tags from '../Components/Tags';
 import Reels from '../Components/Reels';
 import Tab from '../Components/Tab';
+import highlightData from '../Components/Constants/highlightData'
 
 const MobileProfile = () => {
    const [activeTab, setActiveTab] = useState("posts");
