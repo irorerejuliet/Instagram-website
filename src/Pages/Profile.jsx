@@ -1,5 +1,5 @@
 
-import Main from "../Components/main"
+import ProfileDetails from "../Components/ProfileDetails"
 import MobileProfile from "./MobileProfile"
 
 
@@ -9,9 +9,9 @@ const Profile = () => {
    
         <div className='w-full min-h-screen lg:py-10 md:py-6 sm:py-4 lg:px-14 md:12 smpx-7 px-3'>
           {/* profile for big screem */}
-          <Main/>
+          <ProfileDetails/>
           {/* profile for larfe screen */}
-          <MobileProfile/>
+          <MobileProfile/> 
         </div>
   )
 }

@@ -9,7 +9,7 @@ import Tags from './Tags';
 import { RiCalendarEventFill, RiPriceTag2Fill } from 'react-icons/ri';
 import { LiaTableSolid } from 'react-icons/lia';
 
-const Main= () => {
+const ProfileDetails= () => {
   const [activeTab, setActiveTab] = useState("posts");
   const [isContentVisible, setContentVisible] = useState(true)
 
@@ -143,4 +143,4 @@ const Main= () => {
   );
 }
 
-export default Main
+export default ProfileDetails
