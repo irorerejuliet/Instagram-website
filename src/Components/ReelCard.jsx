@@ -11,12 +11,6 @@ const ReelCard = () => {
           to="/"
           key={id}
           className="md:w-[24.675%] w-[32.5%] lg:h-[48vh] md:h-[40vh] sm:h-[30vh] relative group"
-          style={{
-            backgroundImage: 'url("/images/vacation.jpeg")',
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
         >
           <video
             src={video}

@@ -32,7 +32,7 @@ const Main= () => {
   return (
     <>
       <div className="lg:w-[88%]  md:w-[88%] sm:w-full w-full  h-auto lg:block md:block sm:hidden hidden">
-        {/* Ypur info section */}
+        {/* Your info section */}
         <div className="w-full h-auto flex items-center lg:gap-x-20 md:gap-x-16 sm:gap-x-12 gap-x-3.5 justify-center mb-10">
           <img
             src="/images/ifueko.jpg"
