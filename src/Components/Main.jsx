@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
-import { CiLink } from 'react-icons/ci';
-import { FaLink } from 'react-icons/fa';
 import { IoIosLink, IoIosSettings, } from 'react-icons/io';
 import { Link } from 'react-router-dom'
 import { highlightData } from './Constants/HighlightData';
 import Tab from './Tab';
-import { MdLocalPostOffice } from 'react-icons/md';
 import Posts from './Posts';
 import Reels from './Reels';
 import Tags from './Tags';
-import { RxComponent2 } from 'react-icons/rx';
 import { RiCalendarEventFill, RiPriceTag2Fill } from 'react-icons/ri';
 import { LiaTableSolid } from 'react-icons/lia';
 
