@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import { IoIosLink, IoIosSettings, } from 'react-icons/io';
 import { Link } from 'react-router-dom'
-import { highlightData } from './Constants/HighlightData';
+
 import Tab from './Tab';
 import Posts from './Posts';
 import Reels from './Reels';
 import Tags from './Tags';
 import { RiCalendarEventFill, RiPriceTag2Fill } from 'react-icons/ri';
 import { LiaTableSolid } from 'react-icons/lia';
+import { highlightData } from './Constants/HighlightData';
 
 const ProfileDetails= () => {
   const [activeTab, setActiveTab] = useState("posts");
