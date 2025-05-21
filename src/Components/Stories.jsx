@@ -1,7 +1,8 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom';
 import TextEllipse from '../Components/TexEllipse'
 import { storiesData } from '../Constants/StoriesData';
+
 
 const Stories = () => {
   return (
