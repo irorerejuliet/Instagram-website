@@ -1,5 +1,4 @@
 import React from 'react'
-import { feedData } from './Constants/feedData'
 import { Link } from 'react-router-dom';
 import { FaEllipsisH } from 'react-icons/fa';
 import { CiHeart } from 'react-icons/ci';
@@ -7,6 +6,7 @@ import { FaRegComment } from 'react-icons/fa6';
 import { TbLocationShare } from 'react-icons/tb';
 import { BiSolidConversation } from 'react-icons/bi';
 import { MdOutlineEmojiEmotions } from 'react-icons/md';
+import { feedData } from '../Constants/feedData';
 
 const FeedCard = () => {
   return (

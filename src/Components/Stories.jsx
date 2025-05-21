@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { StoriesData } from './Constants/StoriesData';
 import TextEllipse from '../Components/TexEllipse'
+import { storiesData } from '../Constants/StoriesData';
 
 const Stories = () => {
   return (
@@ -20,7 +20,7 @@ const Stories = () => {
           </div>
           <TextEllipse username="Food Tray" maxlength={8} />
         </Link>
-        {StoriesData.map(({ id, image, username }) => (
+        {storiesData.map(({ id, image, username }) => (
           <Link
             to="/"
             key={id}

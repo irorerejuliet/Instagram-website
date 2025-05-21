@@ -1,7 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaThreads } from "react-icons/fa6";
 import { IoMdMenu } from "react-icons/io";
-import { sidebarLinks } from "../Constants/sidebarLinks";
+import { sidebarLinks } from "../../Constants/sidebarLinks";
+
 
 
 

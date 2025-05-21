@@ -1,7 +1,7 @@
 import React from 'react'
-import { reelCardData } from './Constants/reelCardData'
 import { Link } from 'react-router-dom'
 import { AiFillLike } from 'react-icons/ai';
+import { reelCardData } from '../Constants/reelCardData';
 
 const ReelCard = () => {
   return (

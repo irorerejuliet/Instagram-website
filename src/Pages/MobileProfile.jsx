@@ -7,7 +7,10 @@ import Posts from '../Components/Posts';
 import Tags from '../Components/Tags';
 import Reels from '../Components/Reels';
 import Tab from '../Components/Tab';
-import {highlightData} from '../Components/Constants/highlightData'
+import {highlightData} from '../Constants/highlightData'
+
+
+
 
 const MobileProfile = () => {
    const [activeTab, setActiveTab] = useState("posts");
