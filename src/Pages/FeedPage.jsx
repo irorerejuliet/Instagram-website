@@ -3,6 +3,8 @@ import FeedCard from '../Components/FeedCard';
 import TopNavBar from '../Components/LayOuts/TopNavBar'
 import RecommendationUser from '../Components/RecommendationUser';
 import Stories from '../Components/Stories';
+import UploadPost from '../Components/UploadPost';
+
 
 
 const FeedPage = () => {
@@ -18,7 +20,7 @@ const FeedPage = () => {
           {/* Feed section */}
           <div className="w-full h-auto flex items-center justify-center mt-6">
             <div className="lg:w-[73%] md:[73%] sm:w-[80%] w-[80%] h-auto">
-              {/*  */}
+              <UploadPost/>
               <FeedCard />
               <FeedCard />
               <FeedCard />

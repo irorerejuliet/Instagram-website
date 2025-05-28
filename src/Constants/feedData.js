@@ -143,4 +143,16 @@ export const feedData = [
     caption: "Party of One.",
     commentCount: "948",
   },
+  {
+    id: 13,
+    username: "Desire'sHub",
+    time: "15m",
+    profileImg: "/images/ebony.jpg",
+    postImg: "/images/desire'sHub.jpg",
+    mutualFrndimg1: "/images/Frank2.jpg",
+    mutualFrndimg2: "/images/diamond.jpg",
+    likeCount: "9,000,000",
+    caption: "I'm delight, Strong, Bold, and Confident",
+    commentCount: "648",
+  },
 ];
